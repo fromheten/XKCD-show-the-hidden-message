@@ -1,20 +1,19 @@
 {
     "manifest_version": 2,
 
-    "name": "NAMENAME",
-    "description": "Good for XKDE",
+    "name": "XKCD don't make me hover!",
+    "description": "We don't have time for that",
+    "icons": {
+        "128": "icon.png"
+    },
     "version": "1",
     "permissions": [
         "http://xkde.com/"
     ],
     "content_scripts": [
         {
-        "matches": ["http://xkcd.com/*"],
-        "js": ["namegetter.js"]
-    }
-    ],
-    "browser_action": {
-        "defualt_icon": "icon.png"
-    }
-
+            "matches": ["http://xkcd.com/*"],
+            "js": ["namegetter.js"]
+        }
+    ]
 }
