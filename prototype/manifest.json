@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "NAMENAME",
+    "description": "Good for XKDE",
+    "version": "1",
+    "permissions": [
+        "http://xkde.com/"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["http://xkcd.com/*"],
+        "js": ["namegetter.js"]
+    }
+    ],
+    "browser_action": {
+        "defualt_icon": "icon.png"
+    }
+
+}
