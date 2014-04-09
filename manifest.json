@@ -8,12 +8,20 @@
     },
     "version": "1",
     "permissions": [
-        "http://xkde.com/"
+        "http://xkcd.com/",
+        "https://xkcd.com/",
+        "http://*.xkcd.com/",
+        "https://*.xkcd.com/"
     ],
     "content_scripts": [
-        {
-            "matches": ["http://xkcd.com/*"],
-            "js": ["namegetter.js"]
-        }
+      {
+      "matches": [
+        "http://xkcd.com/",
+        "https://xkcd.com/",
+        "http://*.xkcd.com/",
+        "https://*.xkcd.com/"
+      ],
+      "js": ["app.js"]
+    }
     ]
 }
